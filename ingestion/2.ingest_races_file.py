@@ -22,11 +22,6 @@ v_file_date = dbutils.widgets.get("p_file_date")
 
 # COMMAND ----------
 
-# MAGIC %md
-# MAGIC ##### Step 1 - Read the CSV file using the spark dataframe reader API
-
-# COMMAND ----------
-
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType
 
 # COMMAND ----------
@@ -50,11 +45,6 @@ races_df = spark.read \
 
 # COMMAND ----------
 
-# MAGIC %md
-# MAGIC ##### Step 2 - Add ingestion date and race_timestamp to the dataframe
-
-# COMMAND ----------
-
 from pyspark.sql.functions import to_timestamp, concat, col, lit
 
 # COMMAND ----------
@@ -69,18 +59,8 @@ races_with_ingestion_date_df = add_ingestion_date(races_with_timestamp_df)
 
 # COMMAND ----------
 
-# MAGIC %md
-# MAGIC ##### Step 3 - Select only the columns required & rename as required
-
-# COMMAND ----------
-
 races_selected_df = races_with_ingestion_date_df.select(col('raceId').alias('race_id'), col('year').alias('race_year'), 
                                                    col('round'), col('circuitId').alias('circuit_id'),col('name'), col('ingestion_date'), col('race_timestamp'))
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ##### Write the output to processed container in parquet format
 
 # COMMAND ----------
 
