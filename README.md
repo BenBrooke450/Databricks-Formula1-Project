@@ -1,15 +1,25 @@
 # Databricks Formula 1 Racing Analysis
 
-## Problem Statement
-To design and orchestrate a Data Pipeline using Databricks and Azure to perform analysis and visualization on Formula 1 race results.
+## Objective
+Develop and manage a Data Pipeline using Databricks and Azure to analyze and visualize Formula 1 race results.
 
-### Formula 1 Overview
-An Overview of Formula 1 racing can be learned from https://f1chronicle.com/a-beginners-guide-to-formula-1/
+### Overview
+For a comprehensive introduction to Formula 1 racing, visit this https://f1chronicle.com/a-beginners-guide-to-formula-1/
 
 ![F1 Overview](./images/overview.png)
 
 ## Data Source
-The data for all the formula 1 races from 1950s onwards is ontained from an open source API called Ergest Developer API (http://ergast.com/mrd/). The API provides the following tables: <br>
+The dataset for all Formula 1 races from the 1950s onwards is obtained from an open-source API called Ergast Developer API ((http://ergast.com/mrd/)). The API provides the following tables:
+ - Races: Information about each race, including date, location, and circuit details.
+ - Drivers: Details about drivers, such as their name, nationality, and career statistics.
+ - Constructors: Information about the teams, including their names and nationalities.
+ - Results: Race results, including positions, points, and times.
+ - Lap Times: Detailed lap times for each driver in every race.
+ - Pit Stops: Information on pit stops made by drivers during races.
+ - Qualifying: Results of the qualifying sessions, including positions and times.
+ - Seasons: Information about each season, including year and championship standings.
+ - Circuits: Details about the circuits, including name, location, and length.
+ - With these tables, you can build a comprehensive data pipeline to analyze and visualize Formula 1 race results over the decades.
 
 ![Data Model](https://ergast.com/images/ergast_db.png)
 
