@@ -1,4 +1,4 @@
-# Databricks Formula 1 Racing Analysis
+# Azure / Databricks Formula 1 Project
 
 ## Objective
 Develop and manage a Data Pipeline using Databricks and Azure to analyze and visualize Formula 1 race results.
