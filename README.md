@@ -3,9 +3,6 @@
 ## Objective
 Develop and manage a Data Pipeline using Databricks and Azure to analyze and visualize Formula 1 race results.
 
-### Overview
-For a comprehensive introduction to Formula 1 racing, visit this https://f1chronicle.com/a-beginners-guide-to-formula-1/
-
 ![F1 Overview](./images/overview.png)
 
 ## Data Source
