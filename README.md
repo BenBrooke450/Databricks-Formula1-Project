@@ -29,7 +29,7 @@ Attributes of each tables is described in http://ergast.com/docs/f1db_user_guide
 
 
 ## Structure
-1.ingestion - Contains notebooks to ingest all data files from the raw layer to the ingested layer. Handles the incremental data for files: results, pitstops, laptimes, and qualifying.
+- 1.ingestion - Contains notebooks to ingest all data files from the raw layer to the ingested layer. Handles the incremental data for files: results, pitstops, laptimes, and qualifying.
 2.trans - Contains notebooks to transform the data from the ingested layer to the presentation layer. Performs transformations to set up for analysis.
 3.set-up - Notebooks to mount ADLS storages (raw, ingested, presentation) in Databricks.
 4.includes - Contains notebooks with helper functions used in transformations.
